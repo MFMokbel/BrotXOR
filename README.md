@@ -5,10 +5,10 @@ Simple XOR Reduction Based Attack
 
 Attacking rolling-xor encrypted data with the following assumptions:
 
- 1. You know the size of the key and the character set it consists of
- 2. You know enough about the possible character set of the plaintext version
- 3. Encryption key repeats a max of 2 times (because encrypted blob is too small)
- 4. Otherwise, known attack(s) exist that attempt to determine the size of the key and recover it
+ * You know the size of the key and the character set it consists of
+ * You know enough about the possible character set of the plaintext version
+ * Encryption key repeats a max of 2 times (because encrypted blob is too small)
+ * Otherwise, known attack(s) exist that attempt to determine the size of the key and recover it
 
 *note: this work was inspired while reviewing a TM ctf challenge.*
 
@@ -26,10 +26,10 @@ The idea is simple, for a key of 32-byte size, the first byte of the key that de
 
 # Key steps in the code
 
- 1. Get a list of all possible keys and chars for p_1
- 2. Get a list of all possible keys and chars for p_2 (Key search space is limited to step 1 list of keys)
- 3. p_1 and p_2 lists of keys must match
- 4. p_3 is left alone since no matching bytes exist to compare it against
+ * Get a list of all possible keys and chars for p_1
+ * Get a list of all possible keys and chars for p_2 (Key search space is limited to step 1 list of keys)
+ * p_1 and p_2 lists of keys must match
+ * p_3 is left alone since no matching bytes exist to compare it against
  
  # Contributing
  
