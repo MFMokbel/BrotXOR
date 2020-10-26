@@ -21,4 +21,4 @@ The idea is simple, for a key of 32-byte size, the first byte of the key that de
  1. Get a list of all possible keys and chars for p_1
  2. Get a list of all possible keys and chars for p_2 (Key search space is limited to step 1 list of keys)
  3. p_1 and p_2 lists of keys must match
- 4. p_3 is left alone since there is no matching bytes to compare it against
+ 4. p_3 is left alone since no matching bytes exist to compare it against
