@@ -1,6 +1,8 @@
 # BrotXOR
 Simple XOR Reduction Based Attack
 
+# Premise
+
 Attacking rolling-xor encrypted data with the following assumptions:
 
  1. You know the size of the key and the character set it consists of
@@ -9,6 +11,8 @@ Attacking rolling-xor encrypted data with the following assumptions:
  4. Otherwise, known attack(s) exist that attempt to determine the size of the key and recover it
 
 *note: this work was inspired while reviewing a TM ctf challenge.*
+
+# Idea
 
 The data is rolling-xor encrypted with an md5 hash value. The decryption algorithm simply takes the entered md5 hash value (32 characters) as a string, and xors each of the encrypted bytes, one character at a time from the md5 hash value, in a rolling fashion.
 
@@ -20,7 +24,13 @@ The idea is simple, for a key of 32-byte size, the first byte of the key that de
 
 **Note**: Please check the code for more information.
 
+# Key steps in the code
+
  1. Get a list of all possible keys and chars for p_1
  2. Get a list of all possible keys and chars for p_2 (Key search space is limited to step 1 list of keys)
  3. p_1 and p_2 lists of keys must match
  4. p_3 is left alone since no matching bytes exist to compare it against
+ 
+ # Contributing
+ 
+ I'm interested in hearing from you should you have a better insight into how to approach this problem.
