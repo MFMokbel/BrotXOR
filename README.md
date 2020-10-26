@@ -8,7 +8,7 @@ Attacking rolling-xor encrypted data with the following assumptions:
  3. Encryption key repeats a max of 2 times (because encrypted blob is too small)
  4. Otherwise, known attack(s) exist that attempt to determine the size of the key and recover it
 
-note: this work was inspired while reviewing a TM ctf challenge.
+*note: this work was inspired while reviewing a TM ctf challenge.*
 
 The data is rolling-xor encrypted with an md5 hash value. The decryption algorithm simply takes the entered md5 hash value (32 characters) as a string, and xors each of the encrypted bytes, one character at a time from the md5 hash value, in a rolling fashion.
 
