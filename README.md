@@ -22,6 +22,8 @@ There are a couple of interesting observations in this scenario that we can expl
 
 The idea is simple, for a key of 32-byte size, the first byte of the key that decrypts the byte at offset 0 has to be the same 1-byte key that decrypts the byte at offset 32, and so on. And since we know all the possible characters of the key and the plaintext version of the encrypted data, we can limit the decryption step to those inputs, and thereby generating a reduced list of possible key:value pairs. We can further filter the possible key:value pairs such that only alpha, numeric, or not-alpha-numeric values exist.
 
+Depending on the distribution of the encrypted data, you would be able to recover the actual 1-byte key at a given offset. Try the code with the *-r* option.
+
 **Note**: Please check the code for more information.
 
 # Key steps in the code
