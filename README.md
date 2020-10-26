@@ -8,6 +8,8 @@ Attacking rolling-xor encrypted data with the following assumptions:
  3. Encryption key repeats a max of 2 times (because encrypted blob is too small)
  4. Otherwise, known attack(s) exist that attempt to determine the size of the key and recover it
 
+note: this work was inspired while reviewing a TM ctf challenge.
+
 The data is rolling-xor encrypted with an md5 hash value. The decryption algorithm simply takes the entered md5 hash value (32 characters) as a string, and xors each of the encrypted bytes, one character at a time from the md5 hash value, in a rolling fashion.
 
 The problem here is that not enough encrypted data with same repeating key exists. Otherwise, the problem could be reduced to [Challenge 6](https://cryptopals.com/sets/1/challenges/6) of the [cryptopals crypto challenges](https://cryptopals.com/). Multiple solutions of said challenge are already published under [1](https://laconicwolf.com/2018/06/30/cryptopals-challenge-6-break-repeating-key-xor/), [2](https://carterbancroft.com/breaking-repeating-key-xor-theory/) and [3](https://thmsdnnr.com/tutorials/javascript/cryptopals/2017/09/16/cryptopals-set1-challenge-6-break-repeating-key-XOR.html).
