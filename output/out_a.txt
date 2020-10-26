@@ -1,0 +1,91 @@
+
+[ Find Matching Keys (XOR) ]
+
+p_1[00](0x79) = 0:I 1:H 2:K 3:J 4:M 5:L 6:O 7:N 8:A 
+p_2[32](0x56) = 0:f 1:g 2:d 3:e 4:b 5:c 7:a 8:n 
+
+p_1[01](0x7a) = 0:J 1:K 2:H 3:I 4:N 5:O 6:L 7:M 8:B 9:C 
+p_2[33](0x50) = 1:a 2:b 3:c 4:d 5:e 6:f 7:g 8:h 9:i 
+
+p_1[02](0x21) = b:C c:B d:E e:D f:G 
+p_2[34](0x3d) = d:Y e:X 
+
+p_1[03](0x73) = 0:C 1:B 2:A 4:G 5:F 6:E 7:D 8:K 9:J 
+p_2[35](0x57) = 0:g 1:f 2:e 4:c 5:b 6:a 8:o 9:n 
+
+p_1[04](0x22) = a:C c:A d:F e:G f:D 
+p_2[36](0x13) = a:r c:p d:w e:v f:u 
+
+p_1[05](0x43) = 0:s 1:r 2:q 3:p 4:w 5:v 6:u 7:t 9:z 
+p_2[37](0x5d) = 0:m 1:l 2:o 3:n 4:i 5:h 6:k 7:j 8:e 9:d 
+
+p_1[06](0x65) = 0:U 1:T 2:W 3:V 4:Q 5:P 6:S 7:R 
+p_2[38](0x44) = 0:t 1:u 2:v 3:w 4:p 5:q 6:r 7:s 
+
+p_1[07](0x40) = 0:p 1:q 2:r 3:s 4:t 5:u 6:v 7:w 8:x 9:y 
+p_2[39](0x6b) = 1:Z 2:Y 3:X 8:S 9:R 
+
+p_1[08](0x4b) = 1:z 2:y 3:x 8:s 9:r 
+p_2[40](0x50) = 1:a 2:b 3:c 6:f 8:h 9:i 
+
+p_1[09](0x03) = a:b b:a d:g e:f f:e 
+p_2[41](0x0c) = a:m b:n d:h e:i f:j 
+
+p_1[10](0x43) = 0:s 1:r 2:q 3:p 4:w 5:v 6:u 7:t 9:z 
+p_2[42](0x6b) = 1:Z 2:Y 3:X 8:S 9:R 
+
+p_1[11](0x07) = a:f b:e c:d d:c e:b f:a 
+p_2[43](0x11) = a:p b:s c:r d:u e:t f:w 
+
+p_1[12](0x07) = a:f b:e c:d d:c e:b f:a 
+p_2[44](0x0a) = a:k b:h c:i d:n e:o f:l 
+
+p_1[13](0x47) = 0:w 1:v 2:u 3:t 4:s 5:r 6:q 7:p 
+p_2[45](0x5c) = 0:l 1:m 2:n 3:o 4:h 5:i 6:j 7:k 
+
+p_1[14](0x16) = a:w b:t c:u d:r e:s f:p 
+p_2[46](0x17) = a:v b:u c:t d:s e:r f:q 
+
+p_1[15](0x18) = a:y b:z 
+p_2[47](0x3e) = 
+
+p_1[16](0x3e) = d:Z f:X 
+p_2[48](0x16) = a:w d:r f:p 
+
+p_1[17](0x5a) = 0:j 1:k 2:h 3:i 4:n 5:o 6:l 7:m 8:b 9:c 
+p_2[49](0x5c) = 0:l 1:m 2:n 3:o 4:h 5:i 6:j 7:k 8:d 9:e 
+
+p_1[18](0x10) = a:q b:r c:s d:t e:u f:v 
+p_2[50](0x11) = a:p b:s c:r d:u e:t f:w 
+
+p_1[19](0x3a) = b:X c:Y 
+p_2[51](0x09) = b:k c:j e:l 
+
+p_1[20](0x66) = 0:V 1:W 2:T 3:U 4:R 5:S 6:P 7:Q 
+p_2[52](0x56) = 0:f 1:g 2:d 3:e 4:b 5:c 7:a 9:o 
+
+p_1[21](0x7c) = 0:L 1:M 2:N 3:O 4:H 5:I 6:J 7:K 8:D 9:E 
+p_2[53](0x6b) = 1:Z 2:Y 3:X 8:S 9:R 
+
+p_1[22](0x71) = 0:A 2:C 3:B 4:E 5:D 6:G 7:F 8:I 9:H 
+p_2[54](0x51) = 0:a 2:c 3:b 4:e 5:d 6:g 7:f 8:i 9:h 
+
+p_1[23](0x66) = 0:V 1:W 2:T 3:U 4:R 5:S 6:P 7:Q 
+p_2[55](0x57) = 0:g 1:f 2:e 3:d 4:c 5:b 6:a 9:n 
+
+p_1[24](0x56) = 0:f 1:g 2:d 3:e 4:b 5:c 7:a 8:n 9:o 
+p_2[56](0x50) = 1:a 2:b 3:c 4:d 5:e 7:g 8:h 9:i 
+
+p_1[25](0x50) = 1:a 2:b 3:c 4:d 5:e 6:f 7:g 8:h 9:i 
+p_2[57](0x14) = a:u b:v c:w d:p e:q f:r 
+
+p_1[26](0x42) = 0:r 1:s 2:p 3:q 4:v 5:w 6:t 7:u 8:z 
+p_2[58](0x4c) = 4:x 5:y 6:z 8:t 9:u 
+
+---------
+
+p_3[27](0x43) = 0:s 1:r 2:q 3:p 4:w 5:v 6:u 7:t 9:z 
+p_3[28](0x6d) = 4:Y 5:X 7:Z 8:U 9:T 
+p_3[29](0x45) = 0:u 1:t 2:w 3:v 4:q 5:p 6:s 7:r 
+p_3[30](0x5c) = 0:l 1:m 2:n 3:o 4:h 5:i 6:j 7:k 8:d 9:e 
+p_3[31](0x0c) = a:m b:n c:o d:h e:i f:j 
