@@ -13,7 +13,7 @@
     
     Args accepted (one at a time):
     
-    	-a	(prints only the keys with alpha values)
+    	-a  (prints only the keys with alpha values)
     	-d  (prints only the keys with digit values)
     	-o  (prints only the keys with neither digit nor alpha values)
     	-r  (prints original k:v with same keys only)
