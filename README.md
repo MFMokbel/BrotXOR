@@ -1,6 +1,8 @@
 # BrotXOR
 Simple XOR Reduction Based Attack
 
+BrotXOR is a tool that helps in demonstrating a possible reduction based attack against XOR encrypted data with a key.length() > 1. This is useful when not enough repeating blocks exist!
+
 # Premise
 
 Attacking rolling-xor encrypted data with the following assumptions:
