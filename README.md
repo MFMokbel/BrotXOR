@@ -26,6 +26,8 @@ The idea is simple, for a key of 32-byte size, the first byte of the key that de
 
 Depending on the distribution of the encrypted data, you would be able to recover the actual 1-byte key at a given offset. Try the code with the *-r* option.
 
+With this approach, you can try crosswording the output based on certtain assumptions.
+
 **Note**: Please check the code for more information.
 
 # Key steps in the code
